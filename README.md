@@ -3,7 +3,11 @@
 Anyone who has ever look for an apartment in Berlin knows how much painful and time-consuming process it is.
 Its more effiecent to just apply for everything that fit on your criteria (without even looking picture of the apartment) and if you are lucky and got invited to see the apartment, and you are even more lucky to be accepted by the landlord, then you can decide if you want to keep it or not, so lets apply for everything...
 
-Send application forms to Landlords every time a new apartment that fit on your criteria, is listed on Immobilien Scout
+Send application forms to Landlords every time a new apartment that fit on your criteria, is listed on Immobilien Scout.
+
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+
+## Architecture
 
 <img src="https://github.com/AvraamMavridis/berlin-apartments-lambda-public/blob/master/diagram.png?raw=true" />
 
@@ -30,5 +34,7 @@ module.exports = {
 ```
 serverless deploy
 ```
+
+
 
 
