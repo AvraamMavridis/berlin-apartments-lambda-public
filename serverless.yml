@@ -1,0 +1,41 @@
+service: aws-apply-berin
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  environment:
+    DYNAMODB_TABLE: ${self:service}-${self:provider.stage}-apartment
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:GetItem
+        - dynamodb:UpdateItem
+      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
+
+plugins:
+  - serverless-offline
+
+functions:
+  post:
+    handler: handler.post
+    timeout: 300
+    events:
+      - http: GET post
+      - schedule: rate(5 minutes)
+
+
+resources:
+  Resources:
+    NicknamesTable:
+      Type: 'AWS::DynamoDB::Table'
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: apartmentID
+            AttributeType: S
+        KeySchema:
+          - AttributeName: apartmentID
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:provider.environment.DYNAMODB_TABLE}
