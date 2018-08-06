@@ -5,7 +5,7 @@ Its more effiecent to just apply for everything that fit on your criteria (witho
 
 Send application forms to Landlords every time a new apartment that fit on your criteria, is listed on Immobilien Scout.
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com) [![Greenkeeper badge](https://badges.greenkeeper.io/AvraamMavridis/berlin-apartments-lambda-public.svg)](https://greenkeeper.io/)
 
 ## Architecture
 
