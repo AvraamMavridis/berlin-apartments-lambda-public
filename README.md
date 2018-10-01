@@ -11,7 +11,7 @@ Send application forms to Landlords every time a new apartment that fit on your 
 
 <img src="https://github.com/AvraamMavridis/berlin-apartments-lambda-public/blob/master/diagram.png?raw=true" />
 
-## HOT TO
+## HOW TO
 
 1. Edit the settings on the `config.js` file.
 
